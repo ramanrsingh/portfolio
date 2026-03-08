@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pkill -f \"next dev\")",
+      "Bash(netstat -ano)",
+      "Read(//c/Users/admin/Herd/projects/site/**)",
+      "Bash(taskkill //F //PID 2456 //PID 5588)"
+    ]
+  }
+}
