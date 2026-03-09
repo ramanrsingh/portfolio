@@ -4,7 +4,30 @@
       "Bash(pkill -f \"next dev\")",
       "Bash(netstat -ano)",
       "Read(//c/Users/admin/Herd/projects/site/**)",
-      "Bash(taskkill //F //PID 2456 //PID 5588)"
+      "Bash(taskkill //F //PID 2456 //PID 5588)",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"find /var/www/r_sin_com_usr/data/www/r-sin.com -maxdepth 2 -ls 2>/dev/null | head -40\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"find /var/www/r_sin_com_usr/data/www/r-sin.com -maxdepth 3 -ls 2>/dev/null | head -50\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"find /var/www/r_sin_com_usr/data/www/r-sin.com -type d -exec chmod 755 {} \\\\; && find /var/www/r_sin_com_usr/data/www/r-sin.com -type f -exec chmod 644 {} \\\\; && echo ''Permissions fixed''\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"find /etc/nginx /usr/local/nginx -name ''*.conf'' 2>/dev/null | xargs grep -l ''r-sin.com'' 2>/dev/null; find /usr/local/fastpanel2 -name ''*.conf'' 2>/dev/null | xargs grep -l ''r-sin.com'' 2>/dev/null\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"cat /usr/local/fastpanel2/logs/nginx/r-sin.com/error.log 2>/dev/null | tail -20 || find / -name ''error.log'' -path ''*r-sin*'' 2>/dev/null | head -5\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"id && php -v 2>/dev/null | head -1 && node -v 2>/dev/null && npm -v 2>/dev/null\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"ls /etc/nginx/conf.d/ 2>/dev/null | grep ''r.sin\\\\|rsin'' ; ls /etc/nginx/sites-enabled/ 2>/dev/null | grep ''r.sin\\\\|rsin''; ls ~/nginx/ 2>/dev/null; ls ~/conf/ 2>/dev/null\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"ls /home/r_sin_com_usr/ 2>/dev/null; ls ~ 2>/dev/null; env | grep -i home\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"cat ~/www/r-sin.com/nginx.conf 2>/dev/null || ls ~/www/r-sin.com/ 2>/dev/null\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"cat ~/logs/r-sin.com.error.log 2>/dev/null | tail -20 || ls ~/logs/ 2>/dev/null\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"ls ~/logs/\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"cat /usr/local/fastpanel2/etc/nginx/vhosts/r-sin.com.conf 2>/dev/null || find /usr/local/fastpanel2 -name ''*r-sin*'' 2>/dev/null | head -10\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"find / -name ''*r-sin.com*'' -name ''*.conf'' 2>/dev/null | head -10\")",
+      "Bash(scp -i \"C:/Users/admin/.ssh/rsin\" -P 2200 \"/c/Users/admin/Herd/projects/site/nextapp/next.config.ts\" r_sin_com_usr@r-sin.com:~/www/r-sin.com/nextapp/next.config.ts)",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"cd ~/www/r-sin.com/nextapp && npm install --legacy-peer-deps 2>&1 | tail -5\")",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"cd ~/www/r-sin.com/nextapp && npm run build 2>&1\")",
+      "Bash(npm run build)",
+      "Bash(scp -i \"C:/Users/admin/.ssh/rsin\" -P 2200 -r \"/c/Users/admin/Herd/projects/site/nextapp/out/.\" r_sin_com_usr@r-sin.com:~/www/r-sin.com/nextapp/)",
+      "Bash(ssh -i \"C:/Users/admin/.ssh/rsin\" -p 2200 r_sin_com_usr@r-sin.com \"find ~/www/r-sin.com/nextapp -type f -exec chmod 644 {} \\\\; && find ~/www/r-sin.com/nextapp -type d -exec chmod 755 {} \\\\; && echo ''done''\")",
+      "Bash(scp -i \"C:/Users/admin/.ssh/rsin\" -P 2200 \"/c/Users/admin/Herd/projects/site/nextapp/app/components/DigitalTwin.tsx\" \"/c/Users/admin/Herd/projects/site/nextapp/app/page.tsx\" r_sin_com_usr@r-sin.com:~/www/r-sin.com/nextapp/app/)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\admin\\.ssh"
     ]
   }
 }
