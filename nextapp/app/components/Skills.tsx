@@ -38,14 +38,14 @@ const skillGroups = [
     ],
   },
   {
-    category: 'AI & Modern Workflow',
+    category: 'AI & Engineering Practices',
     color: '#10b981',
     skills: [
-      { name: 'AI-Augmented Dev', level: 85 },
-      { name: 'Prompt Engineering', level: 80 },
+      { name: 'AI-Augmented Dev', level: 88 },
+      { name: 'Prompt Engineering', level: 82 },
       { name: 'Rapid Prototyping', level: 90 },
-      { name: 'Automation', level: 88 },
-      { name: 'Vibe Coding', level: 95 },
+      { name: 'Automation & Scripting', level: 88 },
+      { name: 'System Architecture', level: 85 },
     ],
   },
 ];
@@ -99,8 +99,8 @@ export default function Skills() {
           className="mb-16"
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-[2px] bg-[#f97316]" />
-            <span className="text-[#f97316] text-sm font-mono tracking-widest uppercase">Skills & Stack</span>
+            <div className="w-8 h-[2px] bg-[#22d3ee]" />
+            <span className="text-[#22d3ee] text-sm font-mono tracking-widest uppercase">Skills & Stack</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white">
             Tools of the

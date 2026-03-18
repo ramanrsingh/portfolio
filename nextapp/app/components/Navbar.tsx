@@ -51,11 +51,11 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="w-8 h-8 rounded bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] flex items-center justify-center text-white font-bold text-sm">
+            <div className="w-8 h-8 rounded bg-gradient-to-br from-[#22d3ee] to-[#818cf8] flex items-center justify-center text-white font-bold text-sm">
               R
             </div>
             <span className="font-bold text-white">
-              Raman<span className="text-[#00d4ff]">.</span>
+              Raman<span className="text-[#22d3ee]">.</span>
             </span>
           </motion.a>
 
@@ -76,7 +76,7 @@ export default function Navbar() {
             ))}
             <motion.a
               href="mailto:raman.ratnakarsingh@gmail.com"
-              className="px-4 py-2 text-sm font-medium text-[#00d4ff] border border-[#00d4ff]/30 rounded-lg hover:bg-[#00d4ff]/10 hover:border-[#00d4ff]/60 transition-all duration-200"
+              className="px-4 py-2 text-sm font-medium text-[#22d3ee] border border-[#22d3ee]/30 rounded-lg hover:bg-[#22d3ee]/10 hover:border-[#22d3ee]/60 transition-all duration-200"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
@@ -112,7 +112,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
-                className="text-2xl font-medium text-white hover:text-[#00d4ff] transition-colors"
+                className="text-2xl font-medium text-white hover:text-[#22d3ee] transition-colors"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.05 * i }}

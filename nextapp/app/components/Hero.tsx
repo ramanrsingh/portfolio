@@ -58,10 +58,10 @@ export default function Hero() {
       <div className="absolute top-1/3 right-1/4 w-[300px] h-[300px] rounded-full bg-[#f97316]/5 blur-[80px] pointer-events-none" />
 
       {/* Animated corner accents */}
-      <div className="absolute top-24 left-8 w-16 h-16 border-t-2 border-l-2 border-[#00d4ff]/30" />
-      <div className="absolute top-24 right-8 w-16 h-16 border-t-2 border-r-2 border-[#00d4ff]/30" />
-      <div className="absolute bottom-16 left-8 w-16 h-16 border-b-2 border-l-2 border-[#7c3aed]/30" />
-      <div className="absolute bottom-16 right-8 w-16 h-16 border-b-2 border-r-2 border-[#7c3aed]/30" />
+      <div className="absolute top-24 left-8 w-16 h-16 border-t border-l border-[#22d3ee]/20" />
+      <div className="absolute top-24 right-8 w-16 h-16 border-t border-r border-[#22d3ee]/20" />
+      <div className="absolute bottom-16 left-8 w-16 h-16 border-b border-l border-[#818cf8]/20" />
+      <div className="absolute bottom-16 right-8 w-16 h-16 border-b border-r border-[#818cf8]/20" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Status badge */}
@@ -73,7 +73,7 @@ export default function Hero() {
         >
           <span className="w-2 h-2 rounded-full bg-emerald-400 pulse-dot" />
           Available for new opportunities
-          <span className="text-[#00d4ff]">•</span>
+          <span className="text-[#22d3ee]">•</span>
           Jaipur, India
         </motion.div>
 
@@ -98,10 +98,10 @@ export default function Hero() {
           transition={{ delay: 0.6 }}
           className="flex items-center justify-center gap-2 mb-8"
         >
-          <Terminal size={18} className="text-[#00d4ff]" />
+          <Terminal size={18} className="text-[#22d3ee]" />
           <span className="text-xl md:text-2xl text-[#94a3b8] font-mono">
-            <span className="text-[#00d4ff]">{displayText}</span>
-            <span className="cursor-blink text-[#7c3aed]">_</span>
+            <span className="text-[#22d3ee]">{displayText}</span>
+            <span className="cursor-blink text-[#818cf8]">_</span>
           </span>
         </motion.div>
 
@@ -116,7 +116,7 @@ export default function Hero() {
           Building scalable systems at{' '}
           <span className="text-white font-medium">Bacancy Technology</span>{' '}
           with{' '}
-          <span className="text-[#00d4ff]">Laravel, Python & modern AI tooling</span>.
+          <span className="text-[#22d3ee]">Laravel, Python & modern AI tooling</span>.
         </motion.p>
 
         {/* CTAs */}
@@ -128,7 +128,7 @@ export default function Hero() {
         >
           <motion.button
             onClick={() => document.querySelector('#journey')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-8 py-3 rounded-lg bg-gradient-to-r from-[#00d4ff] to-[#7c3aed] text-white font-semibold hover:opacity-90 transition-opacity glow-cyan"
+            className="px-8 py-3 rounded-lg bg-gradient-to-r from-[#22d3ee] to-[#818cf8] text-white font-semibold hover:opacity-90 transition-opacity glow-cyan"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
@@ -160,7 +160,7 @@ export default function Hero() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-[#94a3b8] hover:text-[#00d4ff] transition-colors duration-200 text-sm"
+              className="flex items-center gap-2 text-[#94a3b8] hover:text-[#22d3ee] transition-colors duration-200 text-sm"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -176,7 +176,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.4 }}
-          className="flex flex-col items-center gap-2 text-[#94a3b8] hover:text-[#00d4ff] transition-colors mx-auto float-animation"
+          className="flex flex-col items-center gap-2 text-[#94a3b8] hover:text-[#22d3ee] transition-colors mx-auto float-animation"
         >
           <span className="text-xs font-mono tracking-widest uppercase">Scroll</span>
           <ArrowDown size={16} />
@@ -184,18 +184,16 @@ export default function Hero() {
       </div>
 
       {/* Decorative floating elements */}
-      <div className="absolute top-32 left-16 text-[#00d4ff]/10 font-mono text-xs pointer-events-none hidden lg:block">
-        <div>{'{'}</div>
-        <div className="pl-4">role: &quot;engineer&quot;,</div>
-        <div className="pl-4">stack: [&quot;Laravel&quot;, &quot;AI&quot;],</div>
-        <div className="pl-4">mode: &quot;vibe coding&quot;</div>
-        <div>{'}'}</div>
+      <div className="absolute top-32 left-16 text-[#22d3ee]/8 font-mono text-xs pointer-events-none hidden lg:block leading-relaxed">
+        <div className="text-[#22d3ee]/15 mb-1">// Lead Software Engineer</div>
+        <div>10+ years · Laravel · PHP · Python</div>
+        <div>AI-augmented · Enterprise Scale</div>
       </div>
 
-      <div className="absolute bottom-32 right-16 text-[#7c3aed]/10 font-mono text-xs pointer-events-none hidden lg:block text-right">
-        <div>git commit -m</div>
-        <div>&quot;ship faster with AI&quot;</div>
-        <div className="text-[#00d4ff]/10 mt-2">✓ 1 file changed</div>
+      <div className="absolute bottom-32 right-16 text-[#818cf8]/8 font-mono text-xs pointer-events-none hidden lg:block text-right leading-relaxed">
+        <div>Bacancy Technology</div>
+        <div>Jaipur, India · Remote</div>
+        <div className="text-[#22d3ee]/12 mt-1">Open to opportunities →</div>
       </div>
     </section>
   );

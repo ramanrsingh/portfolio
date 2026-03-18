@@ -10,14 +10,14 @@ const placeholderProjects = [
     desc: 'Full-featured Human Resource Management System with attendance tracking, payroll, and multi-role access control.',
     tags: ['Laravel', 'PHP', 'MySQL', 'Vue.js'],
     status: 'coming-soon',
-    color: '#00d4ff',
+    color: '#22d3ee',
   },
   {
     title: 'FTTX Network Automation',
     desc: 'Real-time network monitoring dashboard with automated report generation for telecom infrastructure.',
     tags: ['Python', 'FTTX', 'Data Viz', 'Automation'],
     status: 'coming-soon',
-    color: '#7c3aed',
+    color: '#818cf8',
   },
   {
     title: 'AI-Powered SaaS Platform',
@@ -41,7 +41,7 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="py-28 relative overflow-hidden">
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#7c3aed]/4 blur-[130px] pointer-events-none" />
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#818cf8]/4 blur-[130px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-6" ref={ref}>
         {/* Section header */}
@@ -52,8 +52,8 @@ export default function Portfolio() {
           className="mb-6"
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-[2px] bg-[#10b981]" />
-            <span className="text-[#10b981] text-sm font-mono tracking-widest uppercase">Portfolio</span>
+            <div className="w-8 h-[2px] bg-[#22d3ee]" />
+            <span className="text-[#22d3ee] text-sm font-mono tracking-widest uppercase">Portfolio</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Work in
@@ -69,8 +69,8 @@ export default function Portfolio() {
           transition={{ delay: 0.2 }}
           className="mb-12 gradient-border rounded-2xl p-6 flex items-center gap-4"
         >
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#00d4ff]/20 to-[#7c3aed]/20 border border-[#00d4ff]/20 flex items-center justify-center flex-shrink-0">
-            <Sparkles size={22} className="text-[#00d4ff]" />
+          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#22d3ee]/20 to-[#818cf8]/20 border border-[#22d3ee]/20 flex items-center justify-center flex-shrink-0">
+            <Sparkles size={22} className="text-[#22d3ee]" />
           </div>
           <div>
             <h3 className="text-white font-semibold mb-1">Portfolio Coming Soon</h3>

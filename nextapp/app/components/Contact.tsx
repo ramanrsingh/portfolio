@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-28 relative overflow-hidden">
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[#f97316]/5 blur-[120px] pointer-events-none" />
-      <div className="absolute left-0 bottom-0 w-[400px] h-[400px] rounded-full bg-[#00d4ff]/5 blur-[100px] pointer-events-none" />
+      <div className="absolute left-0 bottom-0 w-[400px] h-[400px] rounded-full bg-[#22d3ee]/4 blur-[100px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-6" ref={ref}>
         {/* Section header */}
@@ -22,9 +22,9 @@ export default function Contact() {
           className="mb-16 text-center"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-[2px] bg-[#00d4ff]" />
-            <span className="text-[#00d4ff] text-sm font-mono tracking-widest uppercase">Contact</span>
-            <div className="w-8 h-[2px] bg-[#00d4ff]" />
+            <div className="w-8 h-[2px] bg-[#22d3ee]" />
+            <span className="text-[#22d3ee] text-sm font-mono tracking-widest uppercase">Contact</span>
+            <div className="w-8 h-[2px] bg-[#22d3ee]" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Let&apos;s Build Something
@@ -50,14 +50,14 @@ export default function Contact() {
               href="mailto:raman.ratnakarsingh@gmail.com"
               className="gradient-border rounded-2xl p-6 card-hover flex items-center gap-4 group block"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#00d4ff]/10 border border-[#00d4ff]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#00d4ff]/20 transition-colors">
-                <Mail size={22} className="text-[#00d4ff]" />
+              <div className="w-12 h-12 rounded-xl bg-[#22d3ee]/10 border border-[#22d3ee]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#22d3ee]/20 transition-colors">
+                <Mail size={22} className="text-[#22d3ee]" />
               </div>
               <div className="flex-1">
                 <div className="text-xs text-[#64748b] mb-1 font-mono uppercase tracking-widest">Email</div>
                 <div className="text-white font-medium">raman.ratnakarsingh@gmail.com</div>
               </div>
-              <ExternalLink size={16} className="text-[#64748b] group-hover:text-[#00d4ff] transition-colors" />
+              <ExternalLink size={16} className="text-[#64748b] group-hover:text-[#22d3ee] transition-colors" />
             </a>
 
             {/* LinkedIn card */}
@@ -121,7 +121,7 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="What's this about?"
-                  className="w-full bg-[#0d1120] border border-[#1e293b] rounded-lg px-4 py-3 text-white text-sm placeholder-[#475569] focus:outline-none focus:border-[#00d4ff]/40 transition-colors"
+                  className="w-full bg-[#0d1120] border border-[#1e293b] rounded-lg px-4 py-3 text-white text-sm placeholder-[#475569] focus:outline-none focus:border-[#22d3ee]/40 transition-colors"
                 />
               </div>
               <div>
@@ -129,14 +129,14 @@ export default function Contact() {
                 <textarea
                   rows={4}
                   placeholder="Tell me about your project or opportunity..."
-                  className="w-full bg-[#0d1120] border border-[#1e293b] rounded-lg px-4 py-3 text-white text-sm placeholder-[#475569] focus:outline-none focus:border-[#00d4ff]/40 transition-colors resize-none"
+                  className="w-full bg-[#0d1120] border border-[#1e293b] rounded-lg px-4 py-3 text-white text-sm placeholder-[#475569] focus:outline-none focus:border-[#22d3ee]/40 transition-colors resize-none"
                 />
               </div>
             </div>
 
             <motion.a
               href="mailto:raman.ratnakarsingh@gmail.com"
-              className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-gradient-to-r from-[#00d4ff] to-[#7c3aed] text-white font-semibold hover:opacity-90 transition-opacity"
+              className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-gradient-to-r from-[#22d3ee] to-[#818cf8] text-white font-semibold hover:opacity-90 transition-opacity"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >

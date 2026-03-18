@@ -10,11 +10,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] flex items-center justify-center text-white font-bold text-xs">
+            <div className="w-6 h-6 rounded bg-gradient-to-br from-[#22d3ee] to-[#818cf8] flex items-center justify-center text-white font-bold text-xs">
               R
             </div>
             <span className="text-white font-bold text-sm">
-              Raman<span className="text-[#00d4ff]">.</span>
+              Raman<span className="text-[#22d3ee]">.</span>
             </span>
           </div>
 
@@ -33,13 +33,13 @@ export default function Footer() {
               href="https://www.linkedin.com/in/raman-ratnakar-singh-95127288"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#64748b] hover:text-[#7c3aed] transition-colors"
+              className="text-[#64748b] hover:text-[#818cf8] transition-colors"
             >
               <Linkedin size={16} />
             </a>
             <a
               href="mailto:raman.ratnakarsingh@gmail.com"
-              className="text-[#64748b] hover:text-[#00d4ff] transition-colors"
+              className="text-[#64748b] hover:text-[#22d3ee] transition-colors"
             >
               <Mail size={16} />
             </a>

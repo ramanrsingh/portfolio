@@ -26,8 +26,8 @@ const traits = [
   },
   {
     icon: Zap,
-    title: 'Vibe Coder',
-    desc: 'Combining intuition and modern tooling to ship faster, experiment boldly, and turn ideas into reality.',
+    title: 'Pragmatic Builder',
+    desc: 'Balancing engineering rigor with delivery speed — leveraging modern tooling to prototype, validate, and ship production-quality software.',
     color: '#10b981',
   },
 ];
@@ -50,8 +50,8 @@ export default function About() {
           className="mb-16"
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-[2px] bg-[#00d4ff]" />
-            <span className="text-[#00d4ff] text-sm font-mono tracking-widest uppercase">About</span>
+            <div className="w-8 h-[2px] bg-[#22d3ee]" />
+            <span className="text-[#22d3ee] text-sm font-mono tracking-widest uppercase">About</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             The Engineer Behind
@@ -75,7 +75,7 @@ export default function About() {
               </p>
               <p>
                 Driven by curiosity, I pivoted into software development, where I found my stride with
-                <span className="text-[#00d4ff]"> PHP and the Laravel ecosystem</span>. Over the years,
+                <span className="text-[#22d3ee]"> PHP and the Laravel ecosystem</span>. Over the years,
                 I&apos;ve built and scaled web applications, HRMS portals, real-time data dashboards,
                 and telecom automation tools.
               </p>
