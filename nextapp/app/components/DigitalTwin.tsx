@@ -45,11 +45,11 @@ Speak in first person as Raman. Be conversational, confident, and insightful. Ke
 - **Primary**: PHP, Laravel (expert level, ~10 years), Python, REST APIs, MySQL
 - **Frontend**: HTML/CSS, JavaScript, Vue.js, React, Tailwind CSS
 - **Infrastructure**: Network Engineering, Linux/Server Admin, Git, Docker, CI/CD
-- **AI/Modern**: AI-augmented development, prompt engineering, rapid prototyping, automation, "vibe coding"
+- **AI/Modern**: AI-augmented development, prompt engineering, rapid prototyping, automation, system architecture
 - **Telecom**: FTTX, IPTV, NOC operations, OLT/ONT/BNG
 
 ## Career Philosophy
-I started as a Network Engineer and transitioned into software development — that systems-level foundation gives me a unique perspective. I believe in leveraging AI tools to ship faster, automate the boring stuff, and focus creative energy on things that matter. I combine rigorous engineering with modern "vibe coding" practices to prototype and deliver.
+I started as a Network Engineer and transitioned into software development — that systems-level foundation gives me a unique perspective. I believe in leveraging AI tools to ship faster, automate repetitive work, and focus creative energy on things that matter. I combine rigorous engineering discipline with modern AI-augmented workflows to prototype quickly and deliver production-quality software.
 
 ## Availability
 Currently open to senior/lead engineering roles, interesting consulting engagements, and ambitious projects. Especially interested in AI-integrated product development.
@@ -209,7 +209,7 @@ export default function DigitalTwin() {
                 style={{ background: 'linear-gradient(135deg, rgba(0,212,255,0.08), rgba(124,58,237,0.08))' }}>
                 <div className="flex items-center gap-3">
                   <div className="relative">
-                    <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] flex items-center justify-center text-white font-bold text-sm">
+                    <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#22d3ee] to-[#818cf8] flex items-center justify-center text-white font-bold text-sm">
                       R
                     </div>
                     <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-emerald-400 border-2 border-[#0d1120]" />
@@ -236,14 +236,14 @@ export default function DigitalTwin() {
                   <div key={i} className={`flex gap-2.5 ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}>
                     <div className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold ${
                       msg.role === 'assistant'
-                        ? 'bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] text-white'
+                        ? 'bg-gradient-to-br from-[#22d3ee] to-[#818cf8] text-white'
                         : 'bg-[#1e293b] text-[#94a3b8]'
                     }`}>
                       {msg.role === 'assistant' ? 'R' : <User size={12} />}
                     </div>
                     <div className={`max-w-[80%] px-3 py-2.5 rounded-2xl text-sm leading-relaxed ${
                       msg.role === 'user'
-                        ? 'bg-gradient-to-br from-[#00d4ff]/20 to-[#7c3aed]/20 text-white border border-[#00d4ff]/20 rounded-tr-sm'
+                        ? 'bg-gradient-to-br from-[#22d3ee]/20 to-[#818cf8]/20 text-white border border-[#22d3ee]/20 rounded-tr-sm'
                         : 'bg-[#111827] text-[#cbd5e1] border border-[#1e293b] rounded-tl-sm'
                     }`}>
                       {msg.content}
@@ -254,12 +254,12 @@ export default function DigitalTwin() {
                 {/* Streaming message */}
                 {streamingText && (
                   <div className="flex gap-2.5">
-                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] flex items-center justify-center flex-shrink-0 text-xs font-bold text-white">
+                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#22d3ee] to-[#818cf8] flex items-center justify-center flex-shrink-0 text-xs font-bold text-white">
                       R
                     </div>
                     <div className="max-w-[80%] px-3 py-2.5 rounded-2xl rounded-tl-sm bg-[#111827] border border-[#1e293b] text-[#cbd5e1] text-sm leading-relaxed">
                       {streamingText}
-                      <span className="cursor-blink text-[#00d4ff]">▋</span>
+                      <span className="cursor-blink text-[#22d3ee]">▋</span>
                     </div>
                   </div>
                 )}
@@ -267,14 +267,14 @@ export default function DigitalTwin() {
                 {/* Loading dots */}
                 {isLoading && !streamingText && (
                   <div className="flex gap-2.5">
-                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] flex items-center justify-center flex-shrink-0 text-xs font-bold text-white">
+                    <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#22d3ee] to-[#818cf8] flex items-center justify-center flex-shrink-0 text-xs font-bold text-white">
                       R
                     </div>
                     <div className="px-4 py-3 rounded-2xl rounded-tl-sm bg-[#111827] border border-[#1e293b] flex items-center gap-1.5">
                       {[0, 1, 2].map(i => (
                         <motion.span
                           key={i}
-                          className="w-1.5 h-1.5 rounded-full bg-[#00d4ff]"
+                          className="w-1.5 h-1.5 rounded-full bg-[#22d3ee]"
                           animate={{ opacity: [0.3, 1, 0.3] }}
                           transition={{ duration: 1.2, repeat: Infinity, delay: i * 0.2 }}
                         />
@@ -293,7 +293,7 @@ export default function DigitalTwin() {
                     <button
                       key={q}
                       onClick={() => sendMessage(q)}
-                      className="text-xs px-3 py-1.5 rounded-full border border-[#1e293b] text-[#94a3b8] hover:text-[#00d4ff] hover:border-[#00d4ff]/40 transition-all duration-150 bg-[#111827]"
+                      className="text-xs px-3 py-1.5 rounded-full border border-[#1e293b] text-[#94a3b8] hover:text-[#22d3ee] hover:border-[#22d3ee]/40 transition-all duration-150 bg-[#111827]"
                     >
                       {q}
                     </button>
@@ -303,7 +303,7 @@ export default function DigitalTwin() {
 
               {/* Input */}
               <div className="px-4 pb-4 pt-2 border-t border-[#1e293b]">
-                <div className="flex items-center gap-2 bg-[#111827] border border-[#1e293b] rounded-xl px-3 py-2 focus-within:border-[#00d4ff]/40 transition-colors">
+                <div className="flex items-center gap-2 bg-[#111827] border border-[#1e293b] rounded-xl px-3 py-2 focus-within:border-[#22d3ee]/40 transition-colors">
                   <input
                     ref={inputRef}
                     type="text"
@@ -317,7 +317,7 @@ export default function DigitalTwin() {
                   <button
                     onClick={() => sendMessage(input)}
                     disabled={isLoading || !input.trim()}
-                    className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] flex items-center justify-center text-white disabled:opacity-40 disabled:cursor-not-allowed hover:opacity-90 transition-opacity flex-shrink-0"
+                    className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#22d3ee] to-[#818cf8] flex items-center justify-center text-white disabled:opacity-40 disabled:cursor-not-allowed hover:opacity-90 transition-opacity flex-shrink-0"
                   >
                     {isLoading ? <Loader2 size={12} className="animate-spin" /> : <Send size={12} />}
                   </button>
@@ -336,7 +336,7 @@ export default function DigitalTwin() {
         style={{
           background: isOpen
             ? 'linear-gradient(135deg, #1e293b, #0f172a)'
-            : 'linear-gradient(135deg, #00d4ff, #7c3aed)',
+            : 'linear-gradient(135deg, #22d3ee, #818cf8)',
           boxShadow: isOpen
             ? '0 4px 20px rgba(0,0,0,0.4)'
             : '0 4px 20px rgba(0,212,255,0.4), 0 0 40px rgba(124,58,237,0.2)',

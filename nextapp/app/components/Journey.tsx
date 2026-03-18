@@ -107,8 +107,8 @@ export default function Journey() {
           className="mb-16"
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-[2px] bg-[#7c3aed]" />
-            <span className="text-[#7c3aed] text-sm font-mono tracking-widest uppercase">Career Journey</span>
+            <div className="w-8 h-[2px] bg-[#818cf8]" />
+            <span className="text-[#818cf8] text-sm font-mono tracking-widest uppercase">Career Journey</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white">
             10+ Years of
